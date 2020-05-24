@@ -1,2 +1,2 @@
 # tensorproject2
-The second homework for Tensor. A basic website.
+A website version made out of components. I don't know why it's not working for me. Please help.
