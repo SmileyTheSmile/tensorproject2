@@ -21,22 +21,66 @@ class DataSet{
         return new (this.options.model)(result);
     }
 
+    list(page, limit){
+        return this.query(
+            `${options.object}/${id}`, 
+            {
+                method: 'GET'
+            },
+            {
+                '_page':page,
+                '_limit': limit
+            }
+            .then( results => {
+                return results.map((result) => this.toPersonModel(result))
+            })
+        )
+    }
+
     read(id){
         return this.query(
             `${options.object}/${id}`, 
             {
                 method: 'GET'
             }
+            .then( result => {
+                return this.toPersonModel(result)
+            })
         );
     }
 
-    create(){
-
+    create(data){
+        return this.query(
+            `${this.options.object}`,
+            {
+                method: 'POST',
+                body: data
+            }
+            .then( result => {
+                return this.toPersonModel(result)
+            })
+        )
     }
 
-    delete(){
-
+    update(data){
+        return this.query(
+            `${this.options.object}/${id}`,
+            {
+                method: 'PATCH',
+                body: data
+            }
+        )
     }
-}
+    
+    delete(id, data){
+        return this.query(
+            `${this.options.object}/${id}`,
+            {
+                method: 'DELETE',
+                body: data
+            }
+        )
+    }
+};
 
 export default DataSet;

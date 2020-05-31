@@ -6,7 +6,14 @@ class Avatar extends Component {
         this.state.item = item;
     }
 
+    setItem(item){
+        this.state.item = item;
+        this.update();
+    }
+
     render(options, {item}) {
+        if (!item) 
+            return <div class="card card_person"></div>;
         return `<div class="card card_person">
             <img class="card__img card__img_round" src="${item.photo || 'img/ui/default_pix.jpg'}" alt="Аватар ${item.title}" />
             <p class="card__title" title="${item.title || ''}">${item.title || ''}</p>
@@ -37,6 +44,10 @@ class Avatar extends Component {
                 bottom: 0
             }
         });
+    }
+
+    update(){
+        this.container.innerHTML = this.render(this.options);
     }
 }
 
