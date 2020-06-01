@@ -1,0 +1,74 @@
+/* fgfg */
+
+body {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 900px;
+}
+
+header .title {
+    margin: 40px 0px;
+}
+
+header .title img{
+    width: 30px;
+    position: relative;
+}
+
+header .title p{
+    margin: 0;
+}
+
+header .title span{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header .title span:after {
+    content: '';
+    display: block; 
+    border-top: 3px solid #0000; 
+    width: 100px;
+    margin: 20 auto;
+}
+
+.avatars {
+    width: 30%;
+    display: inline-block;
+}
+
+.avatars img{
+    object-fit: cover;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.avatars p{
+    font-size: 25px;
+    margin: 0;
+}
+
+.avatars img[alt="Аватар ӥ̸̯̙̫̞̹̳̯͈̫͚̤̖́̉̾̈́̆̓͂̎̒̊̓̇͒́́͜в̵̡͉̹̲͖̃̾͐͆̎͊͆͌͐̂̉̾̊̚̕а̷̘̦̹̦͍̞͈̬̣͈̒̉̑͑н̴̖̖͛̎̈́̚͠в̴͇̗̞͔̼̞͎͒̌̂́͐͌̉͊̓͆̾̾͗͋͘а̴̢̛̗̩̮̗̪̠̙̪͉̺̳̌̽̍̇͐̒̒͜ͅн̴̡̲͎͕͚͙̼̺̗̺͉̹̄͌̂и̶̧͚̯̣̠͓̩͍̑̀̂͛́̌͋̓͠а̸̨͉̻̺̀̕в̶̺͕͇͉̜̔̄̃͒̊̿̍̌̾͌͘͝н̵͉͋͒̾̏̈́͗̈́̔͌̋̕͝а̴̞͔͓̖̀̎̉̐̈͗̈́̌͑̓͠͝ѝ̷̨͕̍̎̐͛̆̎͘͠͝в̷͇͒͑̔̋̔̓͝н̷͔̙̝͑̂̓͗̎̑̎͐͛̀̚͝а̸͙̩͉̹̹̙͋͑̆̈́̒͑̈́́̓̄и̸̨̗̟̭̫̋̄̓̑̈͂̋͘͜ͅв̶̢̰̩̜̺̲̦̮͍͈̊̓̾́͂̿̔͘̕͝н̵̢̧̻̤͖̇̉͋̈́͛͑͘͜а̷̪͎̓̄̆̓͂̀̌̂͘͠͝"]{
+    display:block;
+    transform: rotate(23deg);
+    margin-left: 50;
+    width: 30%;
+}
+
+.avatars img:hover[alt="Аватар ӥ̸̯̙̫̞̹̳̯͈̫͚̤̖́̉̾̈́̆̓͂̎̒̊̓̇͒́́͜в̵̡͉̹̲͖̃̾͐͆̎͊͆͌͐̂̉̾̊̚̕а̷̘̦̹̦͍̞͈̬̣͈̒̉̑͑н̴̖̖͛̎̈́̚͠в̴͇̗̞͔̼̞͎͒̌̂́͐͌̉͊̓͆̾̾͗͋͘а̴̢̛̗̩̮̗̪̠̙̪͉̺̳̌̽̍̇͐̒̒͜ͅн̴̡̲͎͕͚͙̼̺̗̺͉̹̄͌̂и̶̧͚̯̣̠͓̩͍̑̀̂͛́̌͋̓͠а̸̨͉̻̺̀̕в̶̺͕͇͉̜̔̄̃͒̊̿̍̌̾͌͘͝н̵͉͋͒̾̏̈́͗̈́̔͌̋̕͝а̴̞͔͓̖̀̎̉̐̈͗̈́̌͑̓͠͝ѝ̷̨͕̍̎̐͛̆̎͘͠͝в̷͇͒͑̔̋̔̓͝н̷͔̙̝͑̂̓͗̎̑̎͐͛̀̚͝а̸͙̩͉̹̹̙͋͑̆̈́̒͑̈́́̓̄и̸̨̗̟̭̫̋̄̓̑̈͂̋͘͜ͅв̶̢̰̩̜̺̲̦̮͍͈̊̓̾́͂̿̔͘̕͝н̵̢̧̻̤͖̇̉͋̈́͛͑͘͜а̷̪͎̓̄̆̓͂̀̌̂͘͠͝"]{
+    outline: 1px solid #ff0000;
+    cursor: pointer
+}
+
+.avatars span{
+    display:block;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
